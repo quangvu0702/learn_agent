@@ -21,4 +21,9 @@
    17. [complex prompt from scatch](https://github.com/anthropics/courses/blob/master/prompt_engineering_interactive_tutorial/AmazonBedrock/anthropic/09_Complex_Prompts_from_Scratch.ipynb): 
    18. [search](https://github.com/anthropics/anthropic-cookbook/blob/main/third_party/Wikipedia/wikipedia-search-cookbook.ipynb)
 
- 
+### II. [Claude tool user](./nbs/02_claude_tool_user.ipynb)
+  1. Four steps to use tool: tools + prompt -> Claude uses a tool -> Extract tool inputs + run code + return output -> Claude uses the output to answer the user.
+  2. Force the model to use the tool:
+   - Tell model to use the tool in prompt or system prompt.
+   - using tool_choice={"type": "tool", "name": "print_sentiment_scores"}
+  3. Define task by using using tags and tools.
