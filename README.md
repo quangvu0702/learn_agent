@@ -1,6 +1,6 @@
 ## 1. Claude
 
-I. [Claude](./nbs/01_claude.ipynb)
+### I. [Claude](./nbs/01_claude.ipynb)
    0. https://console.anthropic.com/dashboard
    1. Request a response from a conversation with Claude.
    2. Put words in Claude's mouth: combine role assistant and maximum tokens to get simple short answers.
