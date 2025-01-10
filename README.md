@@ -27,3 +27,29 @@
    - Tell model to use the tool in prompt or system prompt.
    - using tool_choice={"type": "tool", "name": "print_sentiment_scores"}
   3. Define task by using using tags and tools.
+
+
+### III. [LangChain](./nbs/04_lang_chain.ipynb)
+  1. ReAct: Synnergizing Reasoning and Acting in Language Models: LLM <---> Tool
+      - LLM will decide which tool to use and input parameters for the tool.
+      - Run the tool and get the output.
+      - Use the output to answer the user.
+
+  2. LangChain Framework: Prompt + Tools + Flow(Graph).
+      - Graph: nodes: agent or functions, edges: connect nodes, conditional edges: decisions.
+      - Handle multiple threads: using memory + thread_id.
+      - Human in the loop: modify state.
+      - Anotations: using anotation to define the structure of the data.
+  3. 
+
+### IV. [Pydantic](./nbs/08_pydantic.ipynb)
+  1. Pydantic: BaseModel is a class that defines the structure of the data.
+  2. Optional type: from typing import Optional, List
+  3. Constr, conint, ...: set constraints for the data.
+  3. Field validator: @field_validator('age')
+  4. Field 
+  5. model_json_schema
+  6. SkipJsonSchema: skip the field in the json schema.
+  7. Customize json schema: add more information to the json schema.
+  8. PydanticToolsParser: verify output format.
+  9. 
